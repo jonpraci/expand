@@ -1,0 +1,67 @@
+// style.scss
+@import "_vars.scss";
+@import "_global.scss";
+@import "./components/_navbar";
+@import "./components/_homeContent";
+@import "_rtl";
+.pair-form {
+  background: #f5f7f8 0% 0% no-repeat padding-box;
+  opacity: 1;
+  nav {
+    direction: $direction;
+  }
+}
+
+.pair-content {
+  .containers {
+    direction: $direction;
+  }
+}
+.data-form {
+  .tab-content {
+    .tab1 {
+      .map-part {
+        .accordion {
+          .accordion-item {
+            .form-check {
+              display: flex;
+              gap: 30px;
+              align-items: center;
+              label {
+                transform: translateY(2px);
+              }
+            }
+            .accordion-collapse {
+              .row {
+                .part-map {
+                  right: inherit;
+                  left: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      .check-ship {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        label {
+          transform: translateY(2px);
+        }
+      }
+    }
+  }
+  #accordionExample2 {
+    .accordion-item {
+      .form-check {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        label {
+          transform: translateY(2px);
+        }
+      }
+    }
+  }
+}

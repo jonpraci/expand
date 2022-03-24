@@ -1,0 +1,184 @@
+@import "media_quires.scss";
+
+.pair-content {
+
+  .containers {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    gap: 19px;
+    
+    
+    .sidebar {
+      width: 351px;
+      // min-height: 622px;
+      background-color: $content-background;
+      padding: 26px 19px;
+      border: 1px solid $default-bac;
+      @include mobile {
+        width: auto;
+      }
+      .head {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        span {
+          font-size: 14px;
+          color: $defualt-color;
+          @include tablet {
+            font-size: 13px;
+          }
+        }
+      }
+
+      .pair-product-item {
+        margin-bottom: 24px;
+        .product-item {
+          margin-bottom: 5px;
+          display: flex;
+          gap: 17px;
+          @include tablet {
+            margin-bottom: 15px;
+          }
+          .part1 {
+            display: flex;
+            gap: 11px;
+            @include tablet {
+              display: block;
+            }
+            @include mobile {
+              display: flex;
+            }
+            & > div:first-of-type {
+              min-width: 63px;
+              height: 66px;
+              border: 1px solid $default-bac;
+              border-radius: 2px;
+              overflow: hidden;
+              @include tablet {
+                width: 65%;
+                height: 80px;
+              }
+              
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            & > div:last-of-type {
+              p {
+                font-size: 13px;
+                margin: 0;
+                color: $defualt-color;
+                @include tablet {
+                  font-size: 11px;
+                }
+                @include mobile {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+          .part2 {
+            span {
+              font-size: 12px;
+              color: $defualt-color;
+              @include tablet {
+                font-size: 11px;
+              }
+              @include mobile {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+      .pair-product-info {
+        padding: 16px 0;
+        .product-info {
+          margin-bottom: 11px;
+          & > div {
+            display: flex;
+            justify-content: space-between;
+            span {
+              font-size: 12px;
+              color: $defualt-color;
+            }
+          }
+          & > div:not(:last-of-type) {
+            margin-bottom: 5px;
+          }
+        }
+
+        .pair-aplay {
+          height: 40px;
+          border: 1px solid $default-bac;
+          border-radius: 2px;
+          margin-bottom: 8px;
+          input {
+            color: $defualt-color;
+            font-size: 12px;
+            border: 0;
+            outline: 0;
+            &:focus {
+              border: 0;
+              outline: 0;
+              box-shadow: none;
+            }
+            &:hover {
+              border: 0;
+              outline: 0;
+              box-shadow: none;
+            }
+          }
+          button {
+            border: 0;
+            outline: 0;
+            background-color: $default-bac;
+            color: $defualt-color;
+            font-size: 14px;
+            width: 118px;
+            @include tablet {
+              width: auto;
+              font-size: 13px;
+            }
+            &:focus {
+              border: 0;
+              outline: 0;
+              box-shadow: none;
+            }
+            &:hover {
+              border: 0;
+              outline: 0;
+              box-shadow: none;
+            }
+          }
+        }
+        .Havepoints-link {
+          color: $light-blue;
+          font-size: 12px;
+          display: block;
+          text-decoration: none;
+        }
+      }
+      .pair-product-info-bottom {
+        padding: 16px 0;
+          & > div{
+              display: flex;
+              justify-content: space-between;
+              span{
+                font-size: 12px;
+                color: $defualt-color;
+              }
+          }
+      }
+    }
+  }
+}
+// @include tablet {
+//   background: blue;
+// }
+// @include mobile {
+//   background: blue;
+// }

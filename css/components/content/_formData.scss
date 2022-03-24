@@ -1,0 +1,56 @@
+@import "media_quires.scss";
+@import "tabs/tab1";
+@import "tabs/tab2";
+@import "tabs/tab3";
+@import "../../_vars";
+.pair-content {
+  padding-bottom: 20px;
+  .containers {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    gap: 19px;
+    @include tablet {
+      width: 95%;
+    }
+    @include mobile {
+      flex-flow: column;
+    flex-direction: column-reverse;
+    }
+    .data-form {
+      width: 720px;
+      // min-height: 430px;
+      background-color: $content-background;
+      padding: 22px 28px;
+      @include mobile {
+        padding: 15px 15px;
+        width:auto;
+      }
+      nav {
+        height: auto;
+        border-bottom: 1px solid $default-bac;
+        margin-bottom: 16.5px;
+        .nav-tabs {
+          width: 100%;
+          justify-content: space-between;
+          border-bottom: 0;
+          .nav-link {
+            border-top-left-radius: 0rem;
+            border-top-right-radius: 0rem;
+            border: 0;
+            color:$defualt-color;
+            width: 33.333%;
+            font-size: 15px;
+            padding: 0rem 1rem;
+            padding-bottom: .9rem;
+            padding-top: .1rem;
+            &.active{
+              color:$defualt-color;
+              border-bottom: 3px solid $dark-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,191 @@
+.data-form {
+  .tab-content {
+    .tab1 {
+      .head {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 19px;
+        span {
+          font-size: 15px;
+          color: $defualt-color;
+          &:last-of-type {
+            font-size: 14px;
+            a {
+              text-decoration: none;
+              color: $light-blue;
+            }
+          }
+        }
+      }
+      .input-form-info {
+        margin-bottom: 24px;
+        .row {
+          margin: 0;
+          div {
+            padding: 0;
+            &:first-of-type {
+              padding-inline-end: 8px;
+            }
+            &:last-of-type {
+              padding-inline-start: 8px;
+            }
+            label {
+              color: $defualt-color;
+              font-size: 14px;
+              margin-bottom: 6px;
+            }
+            input {
+              font-size: 14px;
+
+              &:focus {
+                box-shadow: none;
+              }
+            }
+            .phone{
+                font-size: 12px;
+                color:red;
+            }
+            .name{
+                font-size: 12px;
+                color:red;
+            }
+          }
+        }
+      }
+      .add-location-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        span {
+          color: $defualt-color;
+          font-size: 15px;
+        }
+        button {
+          color: $light-blue;
+          font-size: 13px;
+          &:focus {
+            box-shadow: none;
+          }
+        }
+      }
+      #collapsethree{
+        input {
+            font-size: 14px;
+
+            &:focus {
+              box-shadow: none;
+            }
+          }
+      }
+
+      .map-part {
+        span {
+          font-size: 12px;
+          margin-bottom: 5px;
+          display: block;
+        }
+        .accordion {
+          padding: 10px 0;
+          .accordion-item {
+            padding: 8px 20px;
+            border-top-left-radius: 0rem;
+            border-top-right-radius: 0rem;
+            margin-bottom: 10px;
+            border: 1px solid $default-bac;
+            border-radius: 0.25rem;
+            position: relative;
+            .form-check {
+              label {
+                display: inline-block;
+                width: 100%;
+                font-size: 12px;
+                color: #ccd0d5;
+              }
+            }
+            .accordion-collapse {
+              .accordion-body {
+                padding: 0rem 1.25rem;
+                .form-texts{
+                    p{
+                        font-size: 12px;
+                        margin-bottom: 2px;
+                        color:#ccd0d5;
+                    }
+                }
+                button{
+                    padding: 10px 0px;
+                    font-size: 12px;
+                    color: $light-blue;
+                    &:focus{
+                        box-shadow: none;
+                    }
+                }
+              }
+            }
+            .accordion-collapse{
+                .row {
+                    .part-map {
+                      position: absolute;
+                      right: 0;
+                      top: 0px;
+                      height: 100%;
+                      padding: 0;
+                      @include mobile {
+                        position: inherit;
+                        height:auto;
+                      }
+                    }
+                  }
+            }
+            
+          }
+        }
+      }
+      .add-form{
+        //   min-height: 200px;
+        .auto-fill{
+            button {
+                color: $light-blue;
+                font-size: 13px;
+                padding-left: 0;
+                padding-right: 0;
+                &:focus {
+                  box-shadow: none;
+                }
+              }
+        }
+        .save-btn{
+            button {
+                font-size: 13px;
+                &:focus {
+                  box-shadow: none;
+                }
+              }
+        }
+      }
+      .check-ship{
+          margin-bottom: 20px;
+          label{
+            color: $defualt-color;
+            font-size: 12px;
+          }
+      }
+      .save-contanue{
+          button{
+              font-size: 14px;
+              background-color: $dark-blue;
+              &:focus {
+                box-shadow: none;
+              }
+          }
+      }
+    }
+
+    
+
+  }
+
+  
+}
+

@@ -1,0 +1,62 @@
+@import "media_quires.scss";
+// style.scss
+
+nav {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  background: $content-background;
+  margin-bottom: 18px;
+
+  .containers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+    @include mobile {
+      width: 95%;
+    }
+    img {
+      margin: 0;
+      width: 185px;
+      height: 48px;
+      background: $default-bac;
+      border: 1px solid $default-bac;
+      border-radius: 2px;
+      opacity: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+  .site-controle {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    div {
+      & > a {
+        padding: 0;
+        top: 28px;
+        left: 1042px;
+        width: 59px;
+        height: 17px;
+        /* UI Properties */
+        text-align: left;
+        font-size: 14px;
+        letter-spacing: 0px;
+        color: $defualt-color;
+        opacity: 1;
+        &::after{
+            display: none;
+        }
+        
+      }
+      a.dropdown-item{
+        font-size: 13px;
+    }
+    }
+  }
+}

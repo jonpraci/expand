@@ -1,0 +1,66 @@
+.tab-content {
+  .shipping_tab {
+    border: 1px solid $default-bac;
+    border-radius: 2px;
+    height: 90px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    p {
+      &:first-of-type {
+        font-size: 15px;
+        margin-bottom: 5px;
+        color: $defualt-color;
+      }
+      &:last-of-type {
+        font-size: 13px;
+        width: 280px;
+        margin: 0;
+        color: $defualt-color;
+      }
+    }
+  }
+  p {
+    font-size: 14px;
+    color: $defualt-color;
+  }
+  #accordionExample2 {
+    margin-bottom: 25px;
+    .accordion-item {
+      padding: 8px 20px;
+      border-top-left-radius: 0rem;
+      border-top-right-radius: 0rem;
+      margin-bottom: 10px;
+      border: 1px solid #e0e5eb;
+      border-radius: 0.25rem;
+      position: relative;
+      div {
+        label {
+          display: inline-block;
+          width: 100%;
+          font-size: 12px;
+          color: $defualt-color;
+          margin-bottom: 5px;
+          &.actives {
+            color: $light-blue;
+          }
+        }
+        .row {
+          p {
+            display: inline-block;
+            width: 100%;
+            font-size: 12px;
+            color: #ccd0d5;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.save-contanue-2 {
+  button {
+    font-size: 14px;
+    background-color: #155ebc;
+  }
+}

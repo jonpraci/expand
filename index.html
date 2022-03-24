@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+   
+    <link rel="stylesheet" href="./dist/assets/mainLtr.css" />
+    <!-- <link rel="stylesheet" href="./dist/assets/mainRtl.css" /> -->
+
+    <title>Document</title>
+  </head>
+  <body class="rtl">
+    <div class="pair-form">
+      <!-- start navbar -->
+      <nav>
+        <div class="containers">
+          <div>
+            <img src="./imags/logo.png" alt="logo" />
+          </div>
+          <div>
+            <div class="site-controle">
+              <div class="lang">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Currency</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Dolar</a></li>
+                  <li><a class="dropdown-item" href="#">Egy</a></li>
+                </ul>
+              </div>
+              <div class="carancy">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Language</a
+                >
+                <ul class="dropdown-menu">
+                  <li id="english"><a class="dropdown-item" href="#">English</a></li>
+                  <li id="arabic"><a class="dropdown-item" href="#">Arabic</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- End navbar -->
+
+      <!-- start content -->
+      <div class="pair-content">
+        <div class="containers">
+          <!-- start form tabs part -->
+          <div class="data-form">
+            <!-- start tabs navbar -->
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button
+                  class="nav-link active"
+                  id="nav-home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-home"
+                  aria-selected="true"
+                >
+                  Information
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-profile"
+                  aria-selected="false"
+                  
+                >
+                  Shipping
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-contact"
+                  aria-selected="false"
+                >
+                  Payment
+                </button>
+              </div>
+            </nav>
+            <!-- End tabs navbar -->
+
+            <!-- start tabs content -->
+            <div class="tab-content" id="nav-tabContent">
+              <div
+                class="tab-pane fade show active tab1"
+                id="nav-home"
+                role="tabpanel"
+                aria-labelledby="nav-home-tab"
+              >
+                <!-- header -->
+                <div class="head">
+                  <span>Contact info</span>
+                  <span>Have account? <a href="">Login</a></span>
+                </div>
+                <!-- form info group -->
+                <div class="input-form-info">
+                  <div class="row w-100">
+                    <div class="col-md-6">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Contact Phone</label
+                      >
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                      />
+                      <span id="phone" style="display: none;">Please Enter The field </span>
+
+                    </div>
+                    <div class="col-md-6">
+                      <label for="exampleFormControlInput2" class="form-label"
+                        >Name</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleFormControlInput2"
+                      />
+                      <span id="name" style="display: none;">Please Enter The field </span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- add location bar -->
+                <div class="add-location-bar">
+                  <span>Shipping Address</span>
+                  <button
+                    class="btn"
+                    type="button"
+                    id="button-addon2"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsethree"
+                    aria-expanded="true"
+                    aria-controls="collapsethree"
+                  >
+                    Add New Address
+                  </button>
+                </div>
+                
+                <div
+                  id="collapsethree"
+                  class="accordion-collapse collapse add-form"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample2"
+                >
+                  <div class="row g-3 mb-2">
+                    <div class="col-md-6">
+                      <div class="col-12 mb-2">
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="First name"
+                          placeholder="name1"
+                          required
+                        />
+                      </div>
+                      <div class="col-12 mb-2">
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="Last name"
+                          placeholder="name1"
+                          required
+                        />
+                      </div>
+                      <div class="col-12 mb-2">
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="First name"
+                          placeholder="name1"
+                          required
+                        />
+                      </div>
+                      <div class="col-12 mb-2">
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="Last name"
+                          placeholder="name1"
+                          required
+                        />
+                      </div>
+                      <div class="col-12 mb-2">
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="Last name"
+                          placeholder="name1"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                      
+                      <div id="map"></div>
+                    </div>
+                  </div>
+                  <div class="row g-3 auto-fill">
+                    <div
+                      class="col-12 mt-0"
+                      style="display: flex; justify-content: flex-end"
+                    >
+                      <button class="btn">Auto Fill</button>
+                      
+                    </div>
+                  </div>
+                  <div class="row g-3 save-btn">
+                    <div
+                      class="col-12"
+                      style="display: flex; justify-content: flex-end"
+                    >
+                      <button type="submit" class="btn btn-primary" id="save-btn"> 
+                        Save
+                      </button>
+                    </div>
+                  </div>
+                  <div class=" save-btn" id="error-mass"  style="display: flex; justify-content: flex-end;font-size: 12px;display: none;">
+                    <span style="color: red;">
+                        you must fill all fields
+                    </span>
+                      
+                  </div>
+                </div>
+
+                <div class="map-part">
+                  <span>Select From Your Saved Address</span>
+
+                  <!-- start accordion -->
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <div
+                        class="form-check"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault1"
+                          id="flexRadioDefault1"
+                          
+                        />
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Jumy Larson
+                        </label>
+                      </div>
+                      <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse "
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="accordion-body">
+                              <div class="form-texts">
+                                <p class="one">
+                                  Unit 2 Green Mount Retail park
+                                </p>
+                                <p class="two">Halfax</p>
+                                <p class="three">HX 1 5QN</p>
+                                <p class="four">Tel: 0344 332 5931</p>
+                              </div>
+                              <button class="btn" id="edit_adress">Edit Address</button>
+                            </div>
+                          </div>
+                          <div class="col-md-6 part-map">
+                            <div style="width: 100%; height: 100%">
+                              <iframe
+                                width="100%"
+                                height="100%"
+                                frameborder="0"
+                                scrolling="no"
+                                marginheight="0"
+                                marginwidth="0"
+                                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                                onchange="(e) => console.log('e.target.value')"
+                              ></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   
+                  </div>
+                </div>
+                <div class="check-ship">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                      
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Ship The Order As A Gift
+                    </label>
+                  </div>
+                </div>
+                <div class="save-contanue">
+                    <div class="row g-3 save-btn">
+                    <div
+                      class="col-12 mr-0"
+                      style="display: flex; justify-content: flex-end"
+                    >
+                      <button
+                       type="submit" class="btn btn-primary w-100" id="containue_btn">
+                        Save And Continue
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="nav-profile"
+                role="tabpanel"
+                aria-labelledby="nav-profile-tab"
+              >
+                <div class="shipping_tab">
+                    <p>Contact info</p>
+                    <p>Name: Any name | Phone: 01066666666 Ship to: Country, state, city, address details</p>
+                </div>
+                <p>Shipping Method:</p>
+
+                <div class="accordion" id="accordionExample2">
+                    <div class="accordion-item">
+                      <div
+                        class="form-check"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne5"
+                        aria-expanded="true"
+                        aria-controls="collapseOne5"
+                      >
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault15"
+                          id="flexRadioDefault15"
+                          checked
+                          
+                        />
+                        <label class="form-check-label actives" for="flexRadioDefault15">
+                          Standart Delivery
+                        </label>
+                      </div>
+                      <div
+                        id="collapseOne5"
+                        class="accordion-collapse collapse "
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample2"
+                      >
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="accordion-body">
+                              <div class="form-texts">
+                                <p class="one">
+                                  Unit 2 Green Mount Retail park
+                                </p>
+                                <p class="two">Halfax</p>
+                                <p class="three">HX 1 5QN</p>
+                                <p class="four">Tel: 0344 332 5931</p>
+                              </div>
+                            </div>
+                          </div>
+                         
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div
+                          class="form-check"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne50"
+                          aria-expanded="true"
+                          aria-controls="collapseOne50"
+                        >
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="flexRadioDefault17"
+                            id="flexRadioDefault17"
+                            
+                          />
+                          <label class="form-check-label" for="flexRadioDefault17">
+                            Standart Delivery
+                          </label>
+                        </div>
+                        <div
+                          id="collapseOne50"
+                          class="accordion-collapse collapse "
+                          aria-labelledby="headingOne"
+                          data-bs-parent="#accordionExample2"
+                        >
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="accordion-body">
+                                <div class="form-texts">
+                                  <p class="one">
+                                    Unit 2 Green Mount Retail park
+                                  </p>
+                                  <p class="two">Halfax</p>
+                                  <p class="three">HX 1 5QN</p>
+                                  <p class="four">Tel: 0344 332 5931</p>
+                                </div>
+                                
+                              </div>
+                            </div>
+                           
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="save-contanue-2">
+                    <div class="row g-3 save-btn">
+                    <div
+                      class="col-12 mr-0"
+                      style="display: flex; justify-content: flex-end"
+                    >
+                      <button
+                      type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        class="btn btn-primary w-100" id="containue_btn">
+                        Save And Continue
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Button trigger modal -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Success..</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          All Things worked successfully , Thank you
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Finish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-contact"
+                role="tabpanel"
+                aria-labelledby="nav-contact-tab"
+              >
+                ...
+              </div>
+            </div>
+            <!-- start tabs content -->
+          </div>
+          <!-- Ed form tabs part -->
+
+          <!-- start sidebar part -->
+          <div class="sidebar">
+            <div class="head">
+              <span>Order summary</span>
+              <span>5 products</span>
+            </div>
+
+            <div class="pair-product-item">
+              <div class="product-item">
+                <div class="part1">
+                  <div>
+                    <img src="./imags/ex1.png" alt="product" />
+                  </div>
+                  <div>
+                    <p>1X Product name product name lorem ipsum</p>
+                  </div>
+                </div>
+                <div class="part2">
+                  <span>EGP:Price</span>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="part1">
+                  <div>
+                    <img src="./imags/ex2.png" alt="product" />
+                  </div>
+                  <div>
+                    <p>1X Product name product name lorem ipsum</p>
+                  </div>
+                </div>
+                <div class="part2">
+                  <span>EGP:Price</span>
+                </div>
+              </div>
+            </div>
+            <hr class="mt-0 mb-0" />
+            <div class="pair-product-info">
+              <div class="product-info">
+                <div>
+                  <span>Subtotal</span>
+                  <span>EGP:Price</span>
+                </div>
+                <div>
+                  <span>Shipping fee</span>
+                  <span>EGP:Price</span>
+                </div>
+              </div>
+
+              <div class="input-group pair-aplay">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Coupons"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  id="button-addon2"
+                >
+                  Button
+                </button>
+              </div>
+
+              <a class="Havepoints-link" href="#">Have points?</a>
+            </div>
+            <hr class="mt-0 mb-0" />
+            <div class="pair-product-info-bottom">
+              <div>
+                <span>Total</span>
+                <span>EGP:Price</span>
+              </div>
+            </div>
+          </div>
+          <!-- End sidebar part -->
+        </div>
+      </div>
+      <!-- start content -->
+     
+    </div>
+
+    <!-- AIzaSyCam8fIoq-khymX1rEJUaoECx9wvBeSbSA -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCam8fIoq-khymX1rEJUaoECx9wvBeSbSA&callback=initMap&v=weekly"
+      async
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
